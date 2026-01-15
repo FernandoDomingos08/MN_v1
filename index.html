@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colégio Mundo Novo I & II</title>
+    <link rel="stylesheet" href="style.css" />
+      <link rel="icon" href="../src/assets/icons/logo-colegio.png">
+    
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <div class="cabecalho-superior">
+        <div class="lado-esquerdo">
+          <button class="botao botao-ligar" id="botao-ligar">
+            <img src="../src/assets/icons/phone-ringing-white-icon.png" alt="" /> Ligar Agora
+          </button>
+          <button class="botao botao-matricular" id="botao-matricular">
+            <img src="../src/assets/icons/registration.png" alt="" /> Matricular-se
+          </button>
+        </div>
+
+        <div class="centro">
+          <div class="logo-titulo">
+            <div class="logo-placeholder">
+              <img src="../src/assets/icons/logo-colegio.png" alt="logo do colégio Mundo Novo" />
+            </div>
+            <div class="titulo-colegio">
+              <h1>Colégio Mundo Novo I & II</h1>
+              <p class="slogan">Educar para um mundo melhor</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lado-direito">
+          <button class="icone botao-email" id="botao-email" title="Enviar email">
+            <img src="../src/assets/icons/email.png" alt="" />
+          </button>
+          <button class="icone botao-whatsapp" id="botao-whatsapp" title="WhatsApp">
+            <img src="../src/assets/icons/whatsapp.png" alt="" />
+          </button>
+          <button class="icone botao-modo-escuro" id="botao-modo-escuro" title="Modo Escuro">
+            <img src="../src/assets/icons/night-mode.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <nav class="cabecalho-inferior">
+        <ul class="menu">
+          <li><a href="#inicio" class="ativo">Página Inicial</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li class="item-cursos">
+            <a href="#cursos" class="link-cursos"
+              >Cursos <img src="../src/assets/icons/caret-down-white-icon.png" alt=""
+            /></a>
+
+            <div class="submenu">
+              <div class="cursos-lista" id="lista-cursos-menu">
+                <a href="#informatica" class="curso-item-menu">
+                  <img src="../src/assets/icons/pc-smartphone.png" alt="" />
+                  <h3 class="curso-titulo">Informática</h3>
+                </a>
+                <a href="#rh" class="curso-item-menu">
+                  <img src="../src/assets/icons/user.png" alt="" />
+                  <h3 class="curso-titulo">Recursos Humanos</h3>
+                </a>
+                <a href="#ciencias" class="curso-item-menu">
+                  <img src="../src/assets/icons/physics.png" alt="" />
+                  <h3 class="curso-titulo">Ciências Físicas e Biológicas</h3>
+                </a>
+                <a href="#contabilidade" class="curso-item-menu">
+                  <img src="../src/assets/icons/calculator.png" alt="" />
+                  <h3 class="curso-titulo">Contabilidade</h3>
+                </a>
+              </div>
+              <a href="#todos-cursos" class="botao-ver-mais"
+                >Ver Mais Cursos <img src="../src/assets/icons/right-chevron.png" alt=""
+              /></a>
+            </div>
+          </li>
+          <li><a href="#vida">Vida Estudantil</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slider -->
+    <section class="slider" id="slider">
+      <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide ativo" data-indice="0">
+          <div
+            class="imagem-slide"
+            style="
+              background-image: linear-gradient(rgba(0, 87, 163, 0.093), rgba(0, 87, 163, 0.126)),
+                url('../src/assets/images/slide1.avif');
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="conteudo-slide">
+            <h2>Infraestrutura de Primeira</h2>
+            <p>
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+              Muito em breve, aqui vais encontrar conteúdos completos, bem explicados e pensados
+              para facilitar a tua experiência no site.
+            </p>
+            <div class="botoes-slide">
+              <button class="botao-slide-primario">
+                <img src="../src/assets/icons/manufacture_.png" alt="" /> Conheça Nossas Instalações
+              </button>
+              <button class="botao-slide-secundario">
+                <i class="fas fa-vr-cardboard"></i> Faça um Tour Virtual
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" data-indice="1">
+          <div
+            class="imagem-slide"
+            style="
+              background-image: linear-gradient(rgba(0, 87, 163, 0.093), rgba(0, 87, 163, 0.126)),
+                url('../src/assets/images/slide2.avif');
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="conteudo-slide">
+            <h2>Laboratórios Modernos</h2>
+            <p>
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+              Muito em breve, aqui vais encontrar conteúdos completos, bem explicados e pensados
+              para facilitar a tua experiência no site.
+            </p>
+            <div class="botoes-slide">
+              <button class="botao-slide-primario">
+                <i class="fas fa-microscope"></i> Visitar Laboratórios
+              </button>
+              <button class="botao-slide-secundario">
+                <i class="fas fa-calendar-alt"></i> Agendar Visita
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" data-indice="2">
+          <div
+            class="imagem-slide"
+            style="
+              background-image: linear-gradient(rgba(0, 87, 163, 0.093), rgba(0, 87, 163, 0.126)),
+                url('../src/assets/images/slide3.avif');
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="conteudo-slide">
+            <h2>Quadras Esporavas</h2>
+            <p>
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+              Muito em breve, aqui vais encontrar conteúdos completos, bem explicados e pensados
+              para facilitar a tua experiência no site.
+            </p>
+            <div class="botoes-slide">
+              <button class="botao-slide-primario">
+                <i class="fas fa-futbol"></i> Ver Modalidades
+              </button>
+              <button class="botao-slide-secundario">
+                <i class="fas fa-users"></i> Times Estudantis
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide" data-indice="3">
+          <div
+            class="imagem-slide"
+            style="
+              background-image: linear-gradient(rgba(0, 87, 163, 0.093), rgba(0, 87, 163, 0.126)),
+                url('../src/assets/images/slide4.avif');
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="conteudo-slide">
+            <h2>Biblioteca Completa</h2>
+            <p>
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+              Muito em breve, aqui vais encontrar conteúdos completos, bem explicados e pensados
+              para facilitar a tua experiência no site.
+            </p>
+            <div class="botoes-slide">
+              <button class="botao-slide-primario">
+                <i class="fas fa-book-open"></i> Explorar Acervo
+              </button>
+              <button class="botao-slide-secundario">
+                <i class="fas fa-search"></i> Pesquisa Online
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide" data-indice="4">
+          <div
+            class="imagem-slide"
+            style="
+              background-image: linear-gradient(rgba(0, 87, 163, 0.093), rgba(0, 87, 163, 0.126)),
+                url('../src/assets/images/img_hidden.png');
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="conteudo-slide">
+            <h2>Atividades Extracurricular</h2>
+            <p>
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+              Muito em breve, aqui vais encontrar conteúdos completos, bem explicados e pensados
+              para facilitar a tua experiência no site.
+            </p>
+            <div class="botoes-slide">
+              <button class="botao-slide-primario">
+                <i class="fas fa-palette"></i> Atividades Culturais
+              </button>
+              <button class="botao-slide-secundario">
+                <i class="fas fa-music"></i> Cursos Artísticos
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide" data-indice="5">
+          <div
+            class="imagem-slide"
+            style="
+              background-image: linear-gradient(rgba(0, 87, 163, 0.093), rgba(0, 87, 163, 0.126)),
+                url('../src/assets/images/img_hidden.png');
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="conteudo-slide">
+            <h2>Suporte Integral</h2>
+            <p>
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+              Muito em breve, aqui vais encontrar conteúdos completos, bem explicados e pensados
+              para facilitar a tua experiência no site.
+            </p>
+            <div class="botoes-slide">
+              <button class="botao-slide-primario">
+                <i class="fas fa-heartbeat"></i> Serviços de Saúde
+              </button>
+              <button class="botao-slide-secundario">
+                <i class="fas fa-utensils"></i> Cantina & Alimentação
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicadores do slider -->
+      <div class="indicadores">
+        <button class="indicador ativo" data-indice="0"></button>
+        <button class="indicador" data-indice="1"></button>
+        <button class="indicador" data-indice="2"></button>
+        <button class="indicador" data-indice="3"></button>
+        <button class="indicador" data-indice="4"></button>
+        <button class="indicador" data-indice="5"></button>
+      </div>
+    </section>
+
+    <!-- Secção de Cursos -->
+    <section class="seccao-cursos" id="cursos">
+      <div class="container">
+        <h2 class="titulo-seccao">Nossos Cursos</h2>
+        <div class="linha-decorativa"></div>
+        <p class="descricao">
+          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+          apenas para manter o site organizado enquanto a informação final não chega.
+        </p>
+        <div class="cursos-grid" id="cursos-grid">
+          <!-- Curso 1 -->
+          <a href="#informatica" class="curso-card">
+            <div
+              class="imagem-curso"
+              style="
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                  url('../src/assets/images/img_hidden.png');
+                background-color: #0056a3;
+              "
+            >
+              <div class="icone-curso" style="background-color: #0056a3">
+                <img src="../src/assets/icons/pc-smartphone.png" alt="" />
+              </div>
+            </div>
+            <div class="conteudo-curso">
+              <h3 style="color: #0056a3">Informática</h3>
+              <p>
+                Curso completo de informática com foco em programação, design gráfico e manutenção
+                de computadores.
+              </p>
+              <span class="botao-saiba-mais" style="color: #0056a3">
+                Saiba mais <img src="../src/assets/icons/right-arrow_.png" alt="" />
+              </span>
+            </div>
+          </a>
+
+          <!-- Curso 2 -->
+          <a href="#rh" class="curso-card">
+            <div
+              class="imagem-curso"
+              style="
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                  url('../src/assets/images/img_hidden.png');
+                background-color: #1e78d2;
+              "
+            >
+              <div class="icone-curso" style="background-color: #1e78d2">
+                <img src="../src/assets/icons/user.png" alt="" />
+              </div>
+            </div>
+            <div class="conteudo-curso">
+              <h3 style="color: #1e78d2">Recursos Humanos</h3>
+              <p>
+                Formação em gestão de recursos humanos, recrutamento e desenvolvimento
+                organizacional.
+              </p>
+              <span class="botao-saiba-mais" style="color: #1e78d2">
+                Saiba mais <img src="../src/assets/icons/right-arrow_.png" alt="" />
+              </span>
+            </div>
+          </a>
+
+          <!-- Curso 3 -->
+          <a href="#ciencias" class="curso-card">
+            <div
+              class="imagem-curso"
+              style="
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                  url('../src/assets/images/img_hidden.png');
+                background-color: #4a9ce8;
+              "
+            >
+              <div class="icone-curso" style="background-color: #4a9ce8">
+                <img src="../src/assets/icons/physics.png" alt="" />
+              </div>
+            </div>
+            <div class="conteudo-curso">
+              <h3 style="color: #4a9ce8">Ciências Físicas e Biológicas</h3>
+              <p>Estudo aprofundado de física, química e biologia com laboratórios modernos.</p>
+              <span class="botao-saiba-mais" style="color: #4a9ce8">
+                Saiba mais <img src="../src/assets/icons/right-arrow_.png" alt="" />
+              </span>
+            </div>
+          </a>
+
+          <!-- Curso 4 -->
+          <a href="#contabilidade" class="curso-card">
+            <div
+              class="imagem-curso"
+              style="
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                  url('../src/assets/images/img_hidden.png');
+                background-color: #ffc107;
+              "
+            >
+              <div class="icone-curso" style="background-color: #ffc107">
+                <img src="../src/assets/icons/calculator.png" alt="" />
+              </div>
+            </div>
+            <div class="conteudo-curso">
+              <h3 style="color: #ffc107">Contabilidade</h3>
+              <p>
+                Curso de contabilidade e gestão financeira para formação de profissionais
+                qualificados.
+              </p>
+              <span class="botao-saiba-mais" style="color: #ffc107">
+                Saiba mais <img src="../src/assets/icons/right-arrow_.png" alt="" />
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secção Sobre Nós -->
+    <section class="seccao sobre-nos" id="sobre">
+      <div class="container">
+        <div class="sobre-conteudo">
+          <div class="sobre-esquerda">
+            <div class="logo-cmn-container">
+              <div class="logo-cmn">
+                <img src="../src/assets/icons/logo-colegio.png" alt="Logo do Colégio Mundo Novo" />
+              </div>
+            </div>
+          </div>
+
+          <div class="sobre-direita">
+            <h2 class="titulo-seccao">Sobre Nós</h2>
+            <div class="linha-decorativa"></div>
+
+            <div class="texto-sobre">
+              <p>
+                O Complexo <strong> Escolar Mundo Novo </strong> é uma instituição educacional
+                privada, fundada em 2011, localizada na província de Luanda, município de Talatona,
+                na Rua Direita da Camama. A instituição dedica-se a oferecer educação de qualidade,
+                com foco no desenvolvimento integral dos alunos, incluindo aspectos acadêmicos,
+                sociais e tecnológicos. O Colégio Mundo Novo I e II atua como referência regional,
+                atendendo crianças e adolescentes em diferentes níveis de ensino, desde o ensino
+                fundamental até o ensino médio.
+              </p>
+
+              <p>
+                O Colégio Mundo Novo tem como objectivo estratégico proporcionar uma educação de
+                excelência, alinhada às demandas contemporâneas de formação digital. A instituição
+                busca integrar ferramentas tecnológicas que favoreçam a organização de dados, a
+                comunicação interna e externa, e o acompanhamento pedagógico, promovendo o
+                desenvolvimento de competências essenciais do século XXI
+              </p>
+            </div>
+
+            <button class="botao botao-agendar" id="botao-agendar">
+              <i class="fas fa-calendar-check"></i> Agendar uma visita
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secção Nossos Serviços -->
+    <section class="seccao servicos" id="servicos">
+      <div class="container">
+        <h2 class="titulo-seccao">Nossos Serviços</h2>
+        <div class="linha-decorativa"></div>
+
+        <div class="servicos-container">
+          <!-- Serviço 1: Transporte Escolar -->
+          <div class="servico-item">
+            <div class="servico-icone-container">
+              <div class="servico-icone" style="background-color: #0056a3">
+                <img src="../src/assets/icons/bus-station_.png" alt="Transporte Escolar" />
+              </div>
+            </div>
+            <h3 class="servico-titulo">Transporte Escolar</h3>
+            <p class="servico-descricao">
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+            </p>
+          </div>
+
+          <!-- Serviço 2: Cantina -->
+          <div class="servico-item">
+            <div class="servico-icone-container">
+              <div class="servico-icone" style="background-color: #1e78d2">
+                <img src="../src/assets/icons/cafeteria.png" alt="Cantina" />
+              </div>
+            </div>
+            <h3 class="servico-titulo">Cantina</h3>
+            <p class="servico-descricao">
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+            </p>
+          </div>
+
+          <!-- Serviço 3: Atendimento Médico -->
+          <div class="servico-item">
+            <div class="servico-icone-container">
+              <div class="servico-icone" style="background-color: #4a9ce8">
+                <img src="../src/assets/icons/prescription.png" alt="Atendimento Médico" />
+              </div>
+            </div>
+            <h3 class="servico-titulo">Atendimento Médico</h3>
+            <p class="servico-descricao">
+              Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e
+              serve apenas para manter o site organizado enquanto a informação final não chega.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secção Atividades Extracurricular -->
+    <section class="seccao atividades" id="atividades">
+      <div class="container">
+        <h2 class="titulo-seccao">Atividades Extracurricular</h2>
+        <div class="linha-decorativa"></div>
+
+        <p class="descricao-atividades">
+          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+          apenas para manter o site organizado enquanto a informação final não chega.
+        </p>
+
+        <div class="filtro-atividades">
+          <button class="botao-filtro ativo" data-categoria="esportes">
+            <i class="fas fa-running"></i> Esportes
+            <img src="../src/assets/icons/running.png" alt="" />
+          </button>
+          <button class="botao-filtro" data-categoria="eventos">
+            <i class="fas fa-calendar-alt"></i>
+            <img src="../src/assets/icons/running.png" alt="" />Eventos
+          </button>
+          <button class="botao-filtro" data-categoria="instalacoes">
+            <i class="fas fa-building"></i>
+            <img src="../src/assets/icons/running.png" alt="" />Instalações
+          </button>
+          <button class="botao-filtro" data-categoria="laboratorios">
+            <i class="fas fa-flask"></i>
+            <img src="../src/assets/icons/running.png" alt="" />Laboratórios
+          </button>
+        </div>
+
+        <!-- Conteúdo das Atividades -->
+        <div class="galeria-atividades">
+          <!-- Esportes (ativo por padrão) -->
+          <div class="categoria-atividade ativa" id="esportes">
+            <div class="grid-atividades">
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Futebol"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Futebol</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Basquete"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Basquete</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Natação"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Natação</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Atletismo"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Atletismo</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eventos -->
+          <div class="categoria-atividade" id="eventos">
+            <div class="grid-atividades">
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Feira de Ciências"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Feira de Ciências</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Semana Cultural"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Semana Cultural</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Formaturas"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Formaturas</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img src="../src/assets/images/img_hidden.png"g" alt="Palestras"
+                class="atividade-img" />
+                <div class="atividade-info">
+                  <h3>Palestras</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instalações -->
+          <div class="categoria-atividade" id="instalacoes">
+            <div class="grid-atividades">
+              <div class="atividade-item">
+                <img src="../src/assets/images/img_hidden.png"" alt="Biblioteca"
+                class="atividade-img" />
+                <div class="atividade-info">
+                  <h3>Biblioteca</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Quadra Poliesportiva"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Quadra Poliesportiva</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Anfiteatro"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Anfiteatro</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Cantina"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Cantina</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laboratórios -->
+          <div class="categoria-atividade" id="laboratorios">
+            <div class="grid-atividades">
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Laboratório de Informática"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Informática</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Laboratório de Química"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Química</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Laboratório de Biologia"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Biologia</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+              <div class="atividade-item">
+                <img
+                  src="../src/assets/images/img_hidden.png"
+                  alt="Laboratório de Física"
+                  class="atividade-img"
+                />
+                <div class="atividade-info">
+                  <h3>Física</h3>
+                  <p>O conteúdo completo será adicionado muito em breve.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Secção de Perguntas Frequentes -->
+    <section class="seccao perguntas-frequentes" id="perguntas-frequentes">
+        <div class="container">
+            <div class="cabecalho-perguntas">
+                <h2 class="titulo-seccao">Perguntas Frequentes</h2>
+                <div class="linha-decorativa"></div>
+                <p class="subtitulo-perguntas">Tire suas dúvidas sobre o Colégio Mundo Novo I & II</p>
+            </div>
+            
+            <div class="grid-perguntas">
+                <!-- Coluna 1 -->
+                <div class="coluna-perguntas">
+                    <!-- Pergunta 1 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt=""></i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pergunta 2 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt=""></i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pergunta 3 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt=""></i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega..</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pergunta 4 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt=""></i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coluna 2 -->
+                <div class="coluna-perguntas">
+                    <!-- Pergunta 5 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt=""></i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pergunta 6 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt=""></i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pergunta 7 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt=""></i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pergunta 8 -->
+                    <div class="pergunta-item">
+                        <div class="pergunta-cabecalho">
+                            <h3>Como posso matricular meu filho no colégio?</h3>
+                            <span class="icone-pergunta"> <img src="../src/assets/icons/down-arrow.png" alt="">
+                            </i></span>
+                        </div>
+                        <div class="pergunta-conteudo">
+                            <p>          Ainda estamos a preparar este conteúdo com todo o cuidado. Esta área é provisória e serve
+              apenas para manter o site organizado enquanto a informação final não chega.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contacto-adicional">
+                <p>Ainda tem dúvidas? Entre em contacto connosco!</p>
+                <div class="botoes-contacto">
+                    <button class="botao botao-whatsapp-contato" id="botao-whatsapp-perguntas">
+                        <img src="../src/assets/icons/whatsapp.png" alt=""> WhatsApp
+                    </button>
+                    <button class="botao botao-email-contato" id="botao-email-perguntas">
+                           <img src="../src/assets/icons/email.png" alt=""> Email
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Coluna 1: Sobre o Colégio -->
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img
+                src="../src/assets/icons/logo-colegio.png"
+                alt="Logo Colégio Mundo Novo"
+                class="logo-footer"
+              />
+              <h2 class="titulo-footer">Colégio Mundo Novo</h2>
+            </div>
+            <p class="footer-descricao">
+              Uma instituição de ensino comprometida com a excelência educacional e formação
+              integral dos alunos.
+            </p>
+            <div class="redes-sociais">
+              <a href="#" class="rede-social" title="Facebook">
+             <img src="../src/assets/icons/facebook.png" alt="">
+              </a>
+              <a href="#" class="rede-social" title="Instagram">
+                      <img src="../src/assets/icons/facebook.png" alt="">
+              </a>
+              <a href="#" class="rede-social" title="Twitter">
+                           <img src="../src/assets/icons/facebook.png" alt="">
+              </a>
+              <a href="#" class="rede-social" title="YouTube">
+                      <img src="../src/assets/icons/facebook.png" alt="">
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Links Rápidos -->
+          <div class="footer-col">
+            <h3 class="titulo-coluna">Links Rápidos</h3>
+            <ul class="footer-links">
+              <li><a href="#inicio">Página Inicial</a></li>
+              <li><a href="#sobre">Sobre Nós</a></li>
+              <li><a href="#cursos">Nossos Cursos</a></li>
+              <li><a href="#atividades">Atividades Extracurriculares</a></li>
+              <li><a href="#vida">Vida Estudantil</a></li>
+              <li><a href="#servicos">Nossos Serviços</a></li>
+              <li><a href="#galeria">Galeria</a></li>
+              <li><a href="#noticias">Notícias</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Serviços -->
+          <div class="footer-col">
+            <h3 class="titulo-coluna">Serviços</h3>
+            <ul class="footer-links">
+              <li><a href="#transporte">Transporte Escolar</a></li>
+              <li><a href="#cantina">Cantina Saudável</a></li>
+              <li><a href="#medico">Atendimento Médico</a></li>
+              <li><a href="#biblioteca">Biblioteca</a></li>
+              <li><a href="#laboratorios">Laboratórios</a></li>
+              <li><a href="#psicologico">Apoio Psicológico</a></li>
+              <li><a href="#reforco">Reforço Escolar</a></li>
+              <li><a href="#matricula">Matrículas Online</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 4: Contacto -->
+          <div class="footer-col">
+            <h3 class="titulo-coluna">Contacto</h3>
+            <ul class="footer-contatos">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                             <img src="../src/assets/icons/facebook.png" alt="">
+                <span/>Talatona, na Rua Direita da Camama</span>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                             <img src="../src/assets/icons/facebook.png" alt="">
+                <span>+244 921 660 962</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                             <img src="../src/assets/icons/facebook.png" alt="">
+                <span>fernandomateusdomingos08@gmail.com</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                             <img src="../src/assets/icons/facebook.png" alt="">
+                <span>Segunda a Sexta: 7h00 - 18h00<br />Sábado: 8h00 - 13h00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Rodapé inferior -->
+        <div class="footer-inferior">
+          <div class="copyright">
+            <p>
+              &copy; 2025 <strong>Colégio Mundo Novo I & II</strong>. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="footer-links-inferior">
+            <a href="#privacidade" class="link-inferior">Política de Privacidade</a>
+            <span class="separador">|</span>
+            <a href="#termos" class="link-inferior">Termos e Condições</a>
+            <span class="separador">|</span>
+            <a href="#mapa" class="link-inferior">Mapa do Site</a>
+            <span class="separador">|</span>
+            <a href="#" class="link-inferior">Perguntas Frequentes</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
